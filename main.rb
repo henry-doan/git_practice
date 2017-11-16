@@ -4,9 +4,9 @@ require 'git'
 class Main
   include Git 
 
-  def self.menu
-    puts "1 Enter git command".colorize(:cyan)
-    puts "2 Exit".colorize(:red)
+  def self.mainmenu
+    puts "1 Enter git command".colorize(:red)
+    puts "2 Exit".colorize(:blue)
     choice = gets.to_i
     case choice
     when 1
@@ -15,7 +15,7 @@ class Main
     when 2
       abort('Goodbye!')
     else
-      puts "invlaid choice".colorize(:cyan)
+      puts "invlaid choice".colorize(:black)
       menu
     end
   end
