@@ -3,7 +3,7 @@ require 'git'
 
 class Main
   include Git 
-
+  #this isn't a comment
   def self.mainmenu
     puts "1 Enter git command".colorize(:red)
     puts "2 Exit".colorize(:blue)
